@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face { font-family: Golden Bridge Sans; src: url('fonts/Golden Bridge Sans.ttf');}
+button{
+	margin-bottom: 5px;
+	width: 125px;
+	cursor: pointer;
+	text-align: center;
+	height: 35px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.fancy{
+	background-color: #1F1F1F;
+	opacity: 0.6;
+}
+.fancy:hover{
+	opacity: 0.8;
+	background-color: #383838;
+}
+body{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+input{
+	width: 120px;
+	height: 30px;
+	color: #D9D9D9;
+}
+select{
+	width: 125px;
+	font-size: 15px;
+	height: 30px;
+	color: #D9D9D9;
+}
+p{
+	font-family: Golden Bridge Sans;
+	font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+	<p>sankaku manager</p>
+	
+	<button class="fancy" id="DLall">download all fav</button>
+	
+	<input class="fancy" id="username" value="username"/>
+	<button class="fancy" id="usernameButton">confirm username</button>
+	
+	<script src="popup.js"></script>
+</body>
+</html>

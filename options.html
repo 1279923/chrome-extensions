@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ><head>
+		
+	<script src="options.js"></script>
+	
+	<style>
+		select > option {
+			border-bottom: 1px solid;
+		}
+		
+		.contentDetails > a{
+			font-weight: bold;
+			cursor: pointer;
+		}
+		
+		img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		
+		video{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			vertical-align: middle;
+		}
+	</style>
+
+	<link rel="shortcut icon" href="images/gear2.png" />
+		
+	</head>
+	
+	<p style="font-size: 36px; position: absolute; top: -40px; left: 320px">SANKAKU MANAGER</p>
+	<a  id="contentID" target="_blank" style="position: absolute; top: 45px; left: 320px; font-size:20px; width: 340px; height: 60px; border: solid 1px lightgrey; overflow-y: auto">search for content, or sort your saved data</a>
+	
+	<select id="siteType" value="all" style="width: 53px">
+		<option value="chan">chan</option>
+		<option value="idol">idol</option>
+		<option value="all" selected>all</option>
+	</select><select id="actions" style="width: 188px">
+		<option value="none">select actions</option>
+		<option value="tag:num(global)">List tag by num (global)</option>
+		<option value="tag:num(user)">List tag by num (user)</option>
+		<option value="tag:recommended">List tag by recommendation</option>
+	</select><button id="DLdata">DL data</button>
+	
+	<br>
+	<input id="upload" type="file"/>
+	<br>
+	<input type="text" id="search" style="width: 300px; top: 20px">
+	<br>
+	<select id="searchAC" size="40" style="width: 304px; overflow:auto"></select>
+	
+	<div id="contentDetails" class="contentDetails" style="overflow:no-scroll ;position: absolute; left: 320px;text-align: left; font-size: 14px; top: 110px; width: 340px; border: solid 1px lightgrey; overflow-y: auto; font-weight: bold"></div>
+	
+	<div id="content" style="position: absolute; right: 10px; top: 5px; border: solid 1px lightgrey"></div>
+	
+</body></html>
